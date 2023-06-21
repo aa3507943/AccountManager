@@ -19,6 +19,7 @@ class MVBTest:
     #     self.ele = AllElements(self.wc)
     #     self.Step = AllSteps(self.wc, self.ele)
     def SignUp_Flow(self):
+        startTime = time.time()
         self.driver = CreateDriver().Driver
         self.wc = WebControl(self.driver)
         self.ele = AllElements(self.wc)
@@ -26,7 +27,9 @@ class MVBTest:
         FlowSignUpMVB(self.Step).TurnTo_SignUpPage()
         FlowSignInByGoogle(self.Step).SignInGoogle()
         FlowFirstUse(self.Step).FirstSetting()
+        print(f"創建帳號花費 {round(time.time()-startTime, 1)} 秒")
     def Delete_Account(self):
+        startTime = time.time()
         self.driver = CreateDriver().Driver
         self.wc = WebControl(self.driver)
         self.ele = AllElements(self.wc)
@@ -37,6 +40,7 @@ class MVBTest:
         FlowGoToGmail(self.Step).GoToGmail()
         FlowGetMailToDelAcc(self.Step).MailHandle()
         FlowCheckSuccessMsg(self.Step).Check_Success()
+        print(f"創建帳號花費 {round(time.time()-startTime, 1)} 秒")
 
 class AccManager:
     def __init__(self):

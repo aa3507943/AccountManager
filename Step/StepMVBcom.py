@@ -69,6 +69,7 @@ class FirstUseSet:
         time.sleep(1)
         self.wc.close_webpage()
         time.sleep(1)
+        print("帳號創建成功")
 
 class AccountManage:
     def __init__(self, driver: WebControl, element: AllElements):

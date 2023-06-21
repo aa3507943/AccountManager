@@ -1,0 +1,301 @@
+
+Start to Create Report Content. 開始建立報告內容
+NoneType: None
+
+====== WebDriver manager ======
+
+Driver [C:\Users\HsiehJa\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+
+The target folder is existing. 此資料夾已存在。
+NoneType: None
+
+Time Out! Cannot locate the element. 時間到！無法定位到該元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 82, in element_wait
+    WebDriverWait(self.driver, time).until(EC.element_to_be_clickable((By.XPATH, element)))
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00CFA813+48355]
+	(No symbol) [0x00C8C4B1]
+	(No symbol) [0x00B95358]
+	(No symbol) [0x00BC09A5]
+	(No symbol) [0x00BC0B3B]
+	(No symbol) [0x00BEE232]
+	(No symbol) [0x00BDA784]
+	(No symbol) [0x00BEC922]
+	(No symbol) [0x00BDA536]
+	(No symbol) [0x00BB82DC]
+	(No symbol) [0x00BB93DD]
+	GetHandleVerifier [0x00F5AABD+2539405]
+	GetHandleVerifier [0x00F9A78F+2800735]
+	GetHandleVerifier [0x00F9456C+2775612]
+	GetHandleVerifier [0x00D851E0+616112]
+	(No symbol) [0x00C95F8C]
+	(No symbol) [0x00C92328]
+	(No symbol) [0x00C9240B]
+	(No symbol) [0x00C84FF7]
+	BaseThreadInitThunk [0x755800C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F87B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F87B1E+238]
+
+
+Cannot get the target element. 無法獲取目標元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 44, in get_element
+    return self.driver.find_element(By.XPATH, element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='dialog'][@tabindex='-1']"}
+  (Session info: chrome=114.0.5735.133)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00CFA813+48355]
+	(No symbol) [0x00C8C4B1]
+	(No symbol) [0x00B95358]
+	(No symbol) [0x00BC09A5]
+	(No symbol) [0x00BC0B3B]
+	(No symbol) [0x00BEE232]
+	(No symbol) [0x00BDA784]
+	(No symbol) [0x00BEC922]
+	(No symbol) [0x00BDA536]
+	(No symbol) [0x00BB82DC]
+	(No symbol) [0x00BB93DD]
+	GetHandleVerifier [0x00F5AABD+2539405]
+	GetHandleVerifier [0x00F9A78F+2800735]
+	GetHandleVerifier [0x00F9456C+2775612]
+	GetHandleVerifier [0x00D851E0+616112]
+	(No symbol) [0x00C95F8C]
+	(No symbol) [0x00C92328]
+	(No symbol) [0x00C9240B]
+	(No symbol) [0x00C84FF7]
+	BaseThreadInitThunk [0x755800C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F87B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F87B1E+238]
+
+
+The target file finished downloading. 目標檔案下載完成。
+NoneType: None
+
+The ticket infos are put in data list. 票單資訊已放入資料列表。
+NoneType: None
+
+Auto Test Report.csv is removed. Auto Test Report.csv 已移除。
+NoneType: None
+
+CSV folder is removed. CSV 資料夾已移除。
+NoneType: None
+
+====== WebDriver manager ======
+
+Driver [C:\Users\HsiehJa\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+
+Time Out! Cannot locate the element. 時間到！無法定位到該元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 90, in elements_wait
+    WebDriverWait(self.driver, time).until(lambda: self.driver.find_elements(By.XPATH, elements)[index])
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 86, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+TypeError: WebControl.elements_wait.<locals>.<lambda>() takes 0 positional arguments but 1 was given
+
+Cannot get the target element. 無法獲取目標元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 55, in get_elements
+    return self.driver.find_elements(By.XPATH, element)[index]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+IndexError: list index out of range
+
+Workplace使用的語言並非中英日文
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Workplace\Workplace_Flow.py", line 37, in post_article
+    commentElement = self.master.get_elements(target, 0)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 55, in get_elements
+    return self.driver.find_elements(By.XPATH, element)[index]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+IndexError: list index out of range
+
+Time Out! Cannot locate the element. 時間到！無法定位到該元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 90, in elements_wait
+    WebDriverWait(self.driver, time).until(lambda: self.driver.find_elements(By.XPATH, elements)[index])
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 86, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+TypeError: WebControl.elements_wait.<locals>.<lambda>() takes 0 positional arguments but 1 was given
+
+Start to Create Report Content. 開始建立報告內容
+NoneType: None
+
+====== WebDriver manager ======
+
+Driver [C:\Users\HsiehJa\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+
+The target folder is created. 此資料夾已建立。
+NoneType: None
+
+Time Out! Cannot locate the element. 時間到！無法定位到該元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 82, in element_wait
+    WebDriverWait(self.driver, time).until(EC.element_to_be_clickable((By.XPATH, element)))
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0098A813+48355]
+	(No symbol) [0x0091C4B1]
+	(No symbol) [0x00825358]
+	(No symbol) [0x008509A5]
+	(No symbol) [0x00850B3B]
+	(No symbol) [0x0087E232]
+	(No symbol) [0x0086A784]
+	(No symbol) [0x0087C922]
+	(No symbol) [0x0086A536]
+	(No symbol) [0x008482DC]
+	(No symbol) [0x008493DD]
+	GetHandleVerifier [0x00BEAABD+2539405]
+	GetHandleVerifier [0x00C2A78F+2800735]
+	GetHandleVerifier [0x00C2456C+2775612]
+	GetHandleVerifier [0x00A151E0+616112]
+	(No symbol) [0x00925F8C]
+	(No symbol) [0x00922328]
+	(No symbol) [0x0092240B]
+	(No symbol) [0x00914FF7]
+	BaseThreadInitThunk [0x776300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B1E+238]
+
+
+Cannot get the target element. 無法獲取目標元件。
+Traceback (most recent call last):
+  File "D:\python\Auto_Upload_Weekly_Report_Bot_Dev\Library\Web\web_control.py", line 44, in get_element
+    return self.driver.find_element(By.XPATH, element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='dialog'][@tabindex='-1']"}
+  (Session info: chrome=114.0.5735.133)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0098A813+48355]
+	(No symbol) [0x0091C4B1]
+	(No symbol) [0x00825358]
+	(No symbol) [0x008509A5]
+	(No symbol) [0x00850B3B]
+	(No symbol) [0x0087E232]
+	(No symbol) [0x0086A784]
+	(No symbol) [0x0087C922]
+	(No symbol) [0x0086A536]
+	(No symbol) [0x008482DC]
+	(No symbol) [0x008493DD]
+	GetHandleVerifier [0x00BEAABD+2539405]
+	GetHandleVerifier [0x00C2A78F+2800735]
+	GetHandleVerifier [0x00C2456C+2775612]
+	GetHandleVerifier [0x00A151E0+616112]
+	(No symbol) [0x00925F8C]
+	(No symbol) [0x00922328]
+	(No symbol) [0x0092240B]
+	(No symbol) [0x00914FF7]
+	BaseThreadInitThunk [0x776300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B1E+238]
+
+
+The target file finished downloading. 目標檔案下載完成。
+NoneType: None
+
+The ticket infos are put in data list. 票單資訊已放入資料列表。
+NoneType: None
+
+Auto Test Report.csv is removed. Auto Test Report.csv 已移除。
+NoneType: None
+
+CSV folder is removed. CSV 資料夾已移除。
+NoneType: None
+
+20230621 10:59:16 CRITICAL: Cannot open browser driver. 無法開啟瀏覽器驅動器
+Traceback (most recent call last):
+  File "D:\test\Teamwork\Driver\create_driver.py", line 45, in create_driver
+    driver.add_cookie(cookie)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 726, in add_cookie
+    self.execute(Command.ADD_COOKIE, {"cookie": cookie_dict})
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00A0A813+48355]
+	(No symbol) [0x0099C4B1]
+	(No symbol) [0x008A5220]
+	(No symbol) [0x009093D3]
+	(No symbol) [0x008EA73C]
+	(No symbol) [0x008FC922]
+	(No symbol) [0x008EA536]
+	(No symbol) [0x008C82DC]
+	(No symbol) [0x008C93DD]
+	GetHandleVerifier [0x00C6AABD+2539405]
+	GetHandleVerifier [0x00CAA78F+2800735]
+	GetHandleVerifier [0x00CA456C+2775612]
+	GetHandleVerifier [0x00A951E0+616112]
+	(No symbol) [0x009A5F8C]
+	(No symbol) [0x009A2328]
+	(No symbol) [0x009A240B]
+	(No symbol) [0x00994FF7]
+	BaseThreadInitThunk [0x776300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B1E+238]
+
+
+20230621 10:59:43 CRITICAL: Cannot open browser driver. 無法開啟瀏覽器驅動器
+Traceback (most recent call last):
+  File "D:\test\Teamwork\Driver\create_driver.py", line 45, in create_driver
+    driver.add_cookie(cookie)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 726, in add_cookie
+    self.execute(Command.ADD_COOKIE, {"cookie": cookie_dict})
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HsiehJa\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00A0A813+48355]
+	(No symbol) [0x0099C4B1]
+	(No symbol) [0x008A5220]
+	(No symbol) [0x009093D3]
+	(No symbol) [0x008EA73C]
+	(No symbol) [0x008FC922]
+	(No symbol) [0x008EA536]
+	(No symbol) [0x008C82DC]
+	(No symbol) [0x008C93DD]
+	GetHandleVerifier [0x00C6AABD+2539405]
+	GetHandleVerifier [0x00CAA78F+2800735]
+	GetHandleVerifier [0x00CA456C+2775612]
+	GetHandleVerifier [0x00A951E0+616112]
+	(No symbol) [0x009A5F8C]
+	(No symbol) [0x009A2328]
+	(No symbol) [0x009A240B]
+	(No symbol) [0x00994FF7]
+	BaseThreadInitThunk [0x776300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B1E+238]
+
